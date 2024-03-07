@@ -1,21 +1,11 @@
 import { useState } from 'react';
+import { pdfLinks } from './Pdfs';
 
 const Notes = () => {
     const [selectedSemester, setSelectedSemester] = useState('');
     const [selectedSubject, setSelectedSubject] = useState('');
     const [selectedUnit, setSelectedUnit] = useState('');
-    const pdfLinks = [
-        {
-            semester: 'Semester 1', subject: 'Mathematics', unit: 'Unit 1', link: 'https://drive.google.com/file/d/1XkQQy1PvAJrwkOrb7kgFuN2OZfglurAi/view?usp=drivesdk'
-        },
-        {
-            semester: 'Semester 1', subject: 'Physics', unit: 'Unit 1', link: 'https://drive.google.com/file/d/1XkQQy1PvAJrwkOrb7kgFuN2OZfglurAi/view?usp=drivesdk'
-        },
-        {
-            semester: 'Semester 2', subject: 'Chemistry', unit: 'Unit 1', link: 'https://drive.google.com/file/d/1XkQQy1PvAJrwkOrb7kgFuN2OZfglurAi/view?usp=drivesdk'
-        },
-        // Add more PDF links as needed
-    ];
+   
 
     const semesters = [...new Set(pdfLinks.map(pdf => pdf.semester))];
     const subjects = pdfLinks.filter(pdf => pdf.semester === selectedSemester);
@@ -32,12 +22,12 @@ const Notes = () => {
         setSelectedUnit('');
     };
 
-    const handleUnitOpen = (unit) => {
-        setSelectedUnit(unit);
+    const handleUnitOpen = (link) => {
+        setSelectedUnit(link);
     };
 
     return (
-        <div className="container mx-auto p-4">
+        <div className="container mx-auto p-4 min-h-screen">
             <h1 className="text-3xl font-bold mb-4">PDF Notes</h1>
             <div className="flex space-x-4 mb-4">
                 <select value={selectedSemester} onChange={handleSemesterChange} className="p-2 border border-gray-300 rounded-lg focus:outline-none">
@@ -63,7 +53,6 @@ const Notes = () => {
             </div>
             {selectedUnit && (
                 <div className="mt-4 max-w-screen-lg mx-auto">
-                    {/* <h2 className="text-xl font-semibold">{selectedUnit}</h2> */}
                     <embed src={selectedUnit} type="application/pdf" width="100%" height="600px" />
                 </div>
             )}
