@@ -5,8 +5,8 @@ function Root() {
   return (
     <>
       <Header />
-      <div className="px-1 bg-gradient-to-r from-blue-700 to-red-500 rounded-lg">
-        <Outlet />
+      <div className="px-1 bg-gradient-to-r from-blue-700 to-red-500">
+        <Outlet/>
       </div>
       <Footer />
     </>

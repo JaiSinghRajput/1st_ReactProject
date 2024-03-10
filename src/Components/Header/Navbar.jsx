@@ -10,7 +10,7 @@ const Navbar = ({ toggleTheme, isDarkMode }) => {
     };
 
     return (
-        <nav className={`rounded-lg bg-gray-800 shadow-lg'}`}>
+        <nav className={`rounded-lg bg-gray-800 shadow-lg}`}>
             <div className="px-4">
                 <div className="flex justify-between items-center py-4">
                     <div>
