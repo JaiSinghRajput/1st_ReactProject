@@ -1,10 +1,6 @@
 import { Route, createBrowserRouter, createRoutesFromElements } from "react-router-dom"
-import Home from './Components/Home/Home.jsx'
-import About from './Components/About/About.jsx'
-import Contact from './Components/Contact/Contact.jsx'
-import Root from './Root.jsx'
-import Devs from './Components/devs/Devs.jsx'
-import Notes from "./Components/Notes/Notes.jsx"
+import {Home , About , Contact , Devs,Notes, Services} from "./Components/index"
+import Root from "./Root"
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -14,6 +10,7 @@ const router = createBrowserRouter(
             <Route path='Contact' element={<Contact />} />
             <Route path='dev' element={<Devs />} />
             <Route path='Notes' element={<Notes/>} />
+            <Route path="Services" element={<Services/>}/>
         </Route>
 
     )

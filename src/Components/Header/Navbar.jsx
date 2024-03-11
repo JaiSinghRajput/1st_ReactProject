@@ -34,6 +34,7 @@ const Navbar = ({ toggleTheme, isDarkMode }) => {
                     <li><a href="/" className="block py-2 px-4 hover:bg-gray-700 hover:rounded-full">Home</a></li>
                     <li><a href="/dev" className="block py-2 px-4 hover:bg-gray-700 hover:rounded-full">Contributors</a></li>
                     <li><a href="/Services" className="block py-2 px-4 hover:bg-gray-700 hover:rounded-full">Services</a></li>
+                    <li><a href="/About" className="block py-2 px-4 hover:bg-gray-700 hover:rounded-full">About</a></li>
                     <li><a href="/contact" className="block py-2 px-4 hover:bg-gray-700 hover:rounded-full">Contact</a></li>
                     <li><a href="/Notes" className="block py-2 px-4 hover:bg-gray-700 hover:rounded-full">Notes</a></li>
                 </ul>

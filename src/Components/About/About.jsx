@@ -1,9 +1,7 @@
 function About() {
     return (
-        <div>
-            <iframe src="https://docs.google.com/viewer?url=https://github.com/Jaisingh007/Notes/blob/Nobi/UNIT-1.pdf&embedded=true" width="100%" height="600px"></iframe>
-
-
+        <div className=" h-dvh bg-white">
+            <h1 className=" text-center text-3xl from-neutral-600">This is my About Section</h1>
         </div>
     )
 }
