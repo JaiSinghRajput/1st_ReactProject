@@ -10,6 +10,7 @@ const Navbar = ({ toggleTheme, isDarkMode }) => {
     };
 <p>
     Hiii
+    <br />
 </p>
     return (
         <nav className={`rounded-lg bg-gray-800 shadow-lg}`}>
