@@ -8,7 +8,9 @@ const Navbar = ({ toggleTheme, isDarkMode }) => {
     const toggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen);
     };
-
+<p>
+    Hiii
+</p>
     return (
         <nav className={`rounded-lg bg-gray-800 shadow-lg}`}>
             <div className="px-4">
