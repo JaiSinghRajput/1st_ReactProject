@@ -1,5 +1,7 @@
 # Student Notes React Website
 
+![Student Notes React Website](https://your-website-url.com/assets/images/website-preview.png)
+
 This is a React-based mini project for providing notes to students. The website utilizes React routing for seamless navigation and access to different sections of notes.
 
 ## Features
@@ -23,31 +25,31 @@ This is a React-based mini project for providing notes to students. The website 
 
 Follow these steps to set up the project:
 
-1. Clone the repository:
+1. **Clone the repository:**
 
     ```bash
     git clone https://github.com/JaiSinghRajput/1st_ReactProject.git
     ```
 
-2. Navigate to the project directory:
+2. **Navigate to the project directory:**
 
     ```bash
     cd 1st_ReactProject
     ```
 
-3. Install dependencies:
+3. **Install dependencies:**
 
     ```bash
     npm install
     ```
 
-4. Run the development server:
+4. **Run the development server:**
 
     ```bash
     npm run dev
     ```
 
-5. Open your browser and visit `http://localhost:5173` to view the website.
+5. **Open your browser and visit [http://localhost:5173](http://localhost:5173) to view the website.**
 
 ## Contributing
 
@@ -59,8 +61,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Author
 
-[Mr. Jai](https://github.com/JaisinghRajput)
+- **[Mr. Jai](https://github.com/JaisinghRajput)**
 
 ## Acknowledgements
 
 Special thanks to [React](https://reactjs.org/) and [React Router](https://reactrouter.com/) for their amazing libraries.
+
